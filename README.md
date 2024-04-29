@@ -145,5 +145,7 @@ git push origin main
 | Date | Réalisation |
 | ------ | ------ |
 | 29/04/2024| Création du projet|
-|||
+|| Importation de favicons + google font Montserrat|
+|| Création des répertoires ```assets```, ```styles``` et ```components``` dans ```src```|
+|| Ajout du component ```<Header />```|
 |||
