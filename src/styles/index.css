@@ -1,0 +1,22 @@
+/* RESET STYLES PAR DÉFAUT NAVIGATEUR */
+  *
+  {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+  }
+/* FIN RESET STYLES PAR DÉFAUT NAVIGATEUR */
+
+
+body 
+{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
