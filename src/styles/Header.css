@@ -1,0 +1,76 @@
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+
+#logo
+{
+    width: 210px;
+    height: auto;
+}
+
+nav ul
+{
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li:last-child
+{
+  margin-left: 57px;
+}
+
+nav ul li a
+{
+    color: #000000;
+    font-weight: 500;
+    font-size: 24px;
+    /*line-height34.22px*/
+}
+
+.selected
+{
+    text-decoration: underline;
+}
+
+
+/* AJOUT D'UNE MEDIA QUERY AVEC UN BREAKPOINT POUR LA VERSION MOBILE À 768px*/
+@media(max-width: 768px)
+{
+  header
+  {
+    margin: 20px 0;
+  }
+
+  #logo
+  {
+      max-width: 145px;
+      height: auto;
+  }
+
+  nav
+  {
+    width: 190px;
+  }
+
+  nav ul li a
+  {
+    line-height: 20px;
+    font-size: 12px;
+    font-variant-caps: all-small-caps;
+  }
+
+  nav ul li:first-child
+  {
+    flex-grow: 1;
+    max-width: 55px;
+  }
+
+  nav ul li:last-child
+  {
+    margin-left: 26px;
+  }
+}
