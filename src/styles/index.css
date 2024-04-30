@@ -21,20 +21,5 @@ body
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
+  
 }
-
-#root
-{
-  margin: 0 100px;
-}
-
-/* AJOUT D'UNE MEDIA QUERY AVEC UN BREAKPOINT POUR LA VERSION MOBILE À 768px*/
-@media(max-width: 768px)
-{
-  #root
-  {
-    margin: 0px 20px;
-  }
-}
-
-

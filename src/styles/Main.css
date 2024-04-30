@@ -1,0 +1,13 @@
+main
+{
+  margin: 50px 100px;
+}
+
+/* AJOUT D'UNE MEDIA QUERY AVEC UN BREAKPOINT POUR LA VERSION MOBILE À 768px*/
+@media(max-width: 768px)
+{
+  main
+  {
+    margin: 20px;
+  }
+}
