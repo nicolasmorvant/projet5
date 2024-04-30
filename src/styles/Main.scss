@@ -1,0 +1,13 @@
+@import "Tool";
+
+.main
+{
+  @include marginCinquanteCent;
+
+  /* AJOUT D'UNE MEDIA QUERY AVEC UN BREAKPOINT POUR LA VERSION MOBILE À 768px*/
+  @media(max-width: 768px)
+  {
+    @include margin20;
+  }
+}
+

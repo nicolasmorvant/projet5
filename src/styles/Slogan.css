@@ -1,87 +1,73 @@
-#slogan
-{
-    position: relative;
-    height: 223px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #ffffff;
+.slogan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  position: relative;
+  height: 223px;
+  width: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #FFFFFF;
+}
+@media (max-width: 576px) {
+  .slogan {
+    justify-content: flex-start;
+    height: 111px;
+  }
+}
+.slogan::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.slogan__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+  width: 100%;
+  height: 223px;
+  object-fit: cover;
+  z-index: -1;
+}
+@media (max-width: 576px) {
+  .slogan__img {
+    height: 111px;
+  }
+}
+.slogan__titre {
+  line-height: 68px;
+  font-weight: 700;
+  font-size: 48px;
+  z-index: 2;
+  /* TABLETTES */
+}
+@media (max-width: 1024px) {
+  .slogan__titre {
+    margin: 0 20px;
+    font-size: 32px;
+    line-height: 1;
+  }
+}
+@media (max-width: 768px) {
+  .slogan__titre {
+    font-size: 30px;
+    margin-left: 16px;
+    line-height: 1;
+  }
+}
+@media (max-width: 576px) {
+  .slogan__titre {
+    width: 225px;
+    font-size: 24px;
+    text-align: left;
+  }
 }
 
-#slogan::before 
-{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
-}
-
-#slogan img
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 223px;
-    object-fit: cover;
-    border-radius: 25px;
-    z-index: -1;
-}
-
-h1
-{
-    line-height: 68px;
-    font-weight: 700;
-    font-size: 48px;
-    z-index: 2;
-    
-}
-
-/* TABLETTES */
-@media(max-width: 1024px)
-{
-    h1
-    {
-        margin: 0 20px;
-        font-size: 32px;
-        line-height: 1;
-    }
-}
-
-@media(max-width: 768px)
-{
-    h1
-    {
-        font-size: 30px;
-        margin-left: 16px;
-        line-height: 1;
-    }
-}
-
-/* MOBILES */
-@media(max-width: 576px)
-{
-    #slogan, #slogan img
-    {
-        height: 111px;
-    }
-
-    #slogan
-    {
-        justify-content: flex-start;
-    }
-
-    h1
-    {
-        width: 225px;
-        font-size: 24px;
-        text-align: left;
-    }
-}
+/*# sourceMappingURL=Slogan.css.map */

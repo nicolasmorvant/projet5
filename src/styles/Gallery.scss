@@ -1,0 +1,17 @@
+@import "Tool";
+
+.gallery
+{
+  margin-top: 50px;
+  padding: 56px 50px;
+  height: 829px;
+  background-color: #F6F6F6;
+  @include borderRadius;
+  @include flexRowBetweenWrap;
+
+    /* AJOUT D'UNE MEDIA QUERY AVEC UN BREAKPOINT POUR LA VERSION MOBILE À 768px*/
+  @media(max-width: 768px)
+  {
+      background-color: initial;
+  }
+}

@@ -1,0 +1,80 @@
+//MIXINS
+@mixin flexColumnStartRowCenter
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flexRowToutCentre
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexRowBetweenCenter 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flexRowEnd
+{
+  display: flex;
+  justify-content: flex-end;
+}
+
+@mixin flexRowBetweenWrap
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@mixin tailleMax
+{
+  width: 100%;
+  height: 100%;
+}
+
+@mixin zeroMarges
+{
+  margin: 0;
+  padding: 0;
+}
+
+@mixin marginCinquanteCent
+{
+  margin: 50px 100px;
+}
+
+@mixin margin20
+{
+  margin: 20px;
+}
+
+@mixin absoluteTopLeft
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@mixin carre340
+{
+  width: 340px;
+  height: 340px;
+}
+
+@mixin borderRadius
+{
+  border-radius: 25px;
+}
+
+//VARIABLES
+$noir: #000000;
+$blanc: #FFFFFF;
+$rouge: #FF6060;
