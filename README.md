@@ -149,3 +149,8 @@ git push origin main
 || Création des répertoires ```assets```, ```styles``` et ```components``` dans ```src```|
 || Ajout du component ```<Header />```|
 |||
+|30/04/2024| Ajout des components ```<Main />```,```<Slogan />```,```<Gallery />```,```<Footer />``` et ```<Card />```|
+|||
+|||
+|||
+|||
