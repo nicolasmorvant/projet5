@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/Slogan.css"
-import imgBackground from "../assets/img/falaise.png"
+import imgBackground from "../assets/img/falaise.webp"
 
 const Slogan = () => {
   
