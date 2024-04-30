@@ -6,15 +6,15 @@ const Header = () => {
 
     return (
         
-        <header>
-            <img src={logo} alt="Logo du site Kasa" id='logo' />
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html" className='selected'>Accueil</a>
+        <header className='header'>
+            <img src={logo} alt="Logo du site Kasa" className='header__logo' />
+            <nav className='navbar'>
+                <ul className='navbar__list'>
+                    <li className='navbar__item'>
+                        <a href="index.html" className='navbar__link navbar__link--selected'>Accueil</a>
                     </li>
-                    <li>
-                        <a href="index.html">A Propos</a>
+                    <li className='navbar__item'>
+                        <a href="index.html" className='navbar__link'>A Propos</a>
                     </li>
                 </ul>
             </nav>

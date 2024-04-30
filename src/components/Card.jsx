@@ -1,6 +1,7 @@
 import React from 'react'
+import '../styles/Card.css'
 
-const Card = (props) => {
+const Card = ({id,title}) => {
   
     /* EXEMPLE 
         {
@@ -34,15 +35,11 @@ const Card = (props) => {
             ]
         },
     */
-    
-    const titre = props.title;
-    const photo = props.pictures[0];
 
     return (
 
-        <div className='card'>
-            <img src={photo} alt={titre} />
-            <h3>{titre}</h3>
+        <div key={id} className='card' id={id}>
+            <h3 className='card__titre'>{title}</h3>
         </div>
 
     )

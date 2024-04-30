@@ -5,7 +5,7 @@ import Gallery from './Gallery'
 
 const Main = () => {
   return (
-    <main>
+    <main className='main'>
         <Slogan />
         <Gallery />
     </main>
