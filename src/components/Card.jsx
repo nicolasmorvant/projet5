@@ -1,8 +1,7 @@
 import React from 'react'
 import '../styles/Card.css'
 
-const Card = ({id,title}) => {
-  
+const Card = ({ id, title }) => {
     /* EXEMPLE 
         {
             "id": "c67ab8a7",
@@ -37,13 +36,10 @@ const Card = ({id,title}) => {
     */
 
     return (
-
-        <div key={id} className='card' id={id}>
-            <h3 className='card__titre'>{title}</h3>
+        <div key={id} className="card" id={id}>
+            <h3 className="card__titre">{title}</h3>
         </div>
-
     )
-
 }
 
 export default Card
