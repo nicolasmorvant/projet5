@@ -1,4 +1,4 @@
-@import "Tool";
+@import "../Tool/Tool";
 
 /* RESET STYLES PAR DÉFAUT NAVIGATEUR */
   *
@@ -22,5 +22,24 @@ body
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
-  
+}
+
+#root
+{
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+
+}
+
+.main
+{
+  @include marginCinquanteCent;
+  @include flexColumnStartRowCenter;
+
+  /* AJOUT D'UNE MEDIA QUERY AVEC UN BREAKPOINT POUR LA VERSION MOBILE À 768px*/
+  @media(max-width: 768px)
+  {
+    @include margin20;
+  }
 }

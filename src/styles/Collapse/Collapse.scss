@@ -1,0 +1,56 @@
+@import "../Tool/Tool";
+
+.collapse
+{
+    &__container
+    {
+        margin-top: 50px;   
+    }
+
+    &__item
+    {
+        width: 1023px;
+        height: 52px;
+        margin-bottom: 30px;
+
+        &:last-child
+        {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title
+    {
+        @include flexRowBetweenCenter;    
+        border-radius: 5px;
+        color: $blanc;
+        background-color: $rouge;
+        padding: 10px 20px 10px 15px;
+        font-size: 24px;
+        font-weight: 700;
+
+        
+        &__icon:hover
+        {
+            cursor: pointer;
+        }
+        
+
+    }
+
+    &__text
+    {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: block; 
+
+        &--closed
+        {
+            display: none;       
+        }
+    }
+
+    
+    
+
+}

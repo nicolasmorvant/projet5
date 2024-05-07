@@ -1,0 +1,29 @@
+@import "../Tool/Tool";
+
+.error
+{
+    @include flexColumnStartRowCenter;
+    justify-content: space-between;
+
+    &__titre
+    {
+        font-size: 288px;
+        font-weight: 700;
+        color: $rouge;
+    }
+
+    &__message
+    {
+        font-size: 36px;
+        font-weight: 500;
+        color: $rouge;
+    }
+
+    &__link
+    {
+        font-size: 18px;
+        font-weight: 500;
+        color: $noir;
+        text-decoration: underline;
+    }
+}

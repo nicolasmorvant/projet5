@@ -1,6 +1,6 @@
-@import "Tool";
+@import "../Tool/Tool";
 
-.slogan
+.banner
 {
     @include flexRowToutCentre;
     @include borderRadius;
@@ -41,7 +41,7 @@
         }
     }
 
-    &__titre
+    &__title
     {
         line-height: 68px;
         font-weight: 700;

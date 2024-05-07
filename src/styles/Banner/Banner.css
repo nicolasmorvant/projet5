@@ -1,4 +1,4 @@
-.slogan {
+.banner {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -11,12 +11,12 @@
   color: #FFFFFF;
 }
 @media (max-width: 576px) {
-  .slogan {
+  .banner {
     justify-content: flex-start;
     height: 111px;
   }
 }
-.slogan::before {
+.banner::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -26,7 +26,7 @@
   content: "";
   background-color: rgba(0, 0, 0, 0.5);
 }
-.slogan__img {
+.banner__img {
   position: absolute;
   top: 0;
   left: 0;
@@ -37,11 +37,11 @@
   z-index: -1;
 }
 @media (max-width: 576px) {
-  .slogan__img {
+  .banner__img {
     height: 111px;
   }
 }
-.slogan__titre {
+.banner__title {
   line-height: 68px;
   font-weight: 700;
   font-size: 48px;
@@ -49,25 +49,25 @@
   /* TABLETTES */
 }
 @media (max-width: 1024px) {
-  .slogan__titre {
+  .banner__title {
     margin: 0 20px;
     font-size: 32px;
     line-height: 1;
   }
 }
 @media (max-width: 768px) {
-  .slogan__titre {
+  .banner__title {
     font-size: 30px;
     margin-left: 16px;
     line-height: 1;
   }
 }
 @media (max-width: 576px) {
-  .slogan__titre {
+  .banner__title {
     width: 225px;
     font-size: 24px;
     text-align: left;
   }
 }
 
-/*# sourceMappingURL=Slogan.css.map */
+/*# sourceMappingURL=Banner.css.map */

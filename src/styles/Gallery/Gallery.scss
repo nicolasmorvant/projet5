@@ -1,0 +1,39 @@
+@import "../Tool/Tool";
+
+.gallery
+{
+  margin-top: 50px;
+  padding: 56px 50px;
+  height: 829px;
+  background-color: #F6F6F6;
+  @include borderRadius;
+  @include flexRowBetweenWrap;
+
+  :nth-last-child(-n+3)   
+  {
+    margin-top: 50px;
+  }
+
+  @media(max-width: 1250px)
+  {
+    height: auto;
+
+    :nth-last-child(-n+3)   
+    {
+      margin-top: 0;
+    }
+  }
+
+  @media(max-width: 900px)
+  {
+      background-color: initial;
+      margin-top: 27px;
+      padding: 0;
+      justify-content: center;
+  }
+
+  @media(max-width: 576px)
+  {
+    overflow-y: scroll;
+  }
+}
