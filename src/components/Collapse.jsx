@@ -7,7 +7,7 @@ const Collapse = ({id, title, text}) => {
       <div className="collapse__item" id={id}>
         <h2 className="collapse__title">
           <span className='collapse__title__text'>{title}</span>
-          <i className="collapse__title__icon fa-solid fa-chevron-down"></i>
+          <i className="collapse__title__icon fa-solid fa-chevron-up"></i>
         </h2>
         <p className="collapse__text collapse__text--closed">{text}</p>
       </div>
