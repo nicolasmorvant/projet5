@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["Gallery.scss","../Tool/Tool.scss"],"names":[],"mappings":"AAEA;EAEE;EACA;EACA;EACA;ECkEA;EA1CA;EACA;EACA;;ADtBA;EAEE;;AAGF;EAdF;IAgBI;;EAEA;IAEE;;;AAIJ;EAxBF;IA0BM;IACA;IACA;IACA;;;AAGJ;EAhCF;IAkCI","file":"Gallery.css"}
+{"version":3,"sourceRoot":"","sources":["Gallery.scss","../Tool/Tool.scss"],"names":[],"mappings":"AAEA;EAEE;EACA;EACA;EACA;EACA;ECsEA;EA/CA;EACA;EACA;;ADrBA;EAEE;;AAGF;EAfF;IAiBI;;EAEA;IAEE;;;AAIJ;EAzBF;IA2BM;IACA;IACA;IACA;;;AAGJ;EAjCF;IAmCI","file":"Gallery.css"}
