@@ -10,6 +10,7 @@
         font-size: 288px;
         font-weight: 700;
         color: $rouge;
+        @include marginCentZero;
     }
 
     &__message
@@ -25,5 +26,6 @@
         font-weight: 500;
         color: $noir;
         text-decoration: underline;
+        @include marginCentZero;
     }
 }
