@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Footer.css'
+import '../styles/Footer/Footer.css'
 import logo from '../assets/logo.svg'
 
 const Footer = () => {

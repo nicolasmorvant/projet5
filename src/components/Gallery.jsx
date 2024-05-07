@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Gallery.css'
+import '../styles/Gallery/Gallery.css'
 import Card from '../components/Card'
 import logements from '../logements.json'
 
@@ -8,7 +8,7 @@ const Gallery = () => {
     logements = logements.slice(0, 6)
 
     return (
-        <div className="gallery">
+        <section className="gallery">
             {logements.map((logement) => (
                 <Card
                     key={logement.id}
@@ -16,7 +16,7 @@ const Gallery = () => {
                     title={logement.title}
                 />
             ))}
-        </div>
+        </section>
     )
 }
 
