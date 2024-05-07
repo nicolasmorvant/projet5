@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["Error404.scss","../Tool/Tool.scss"],"names":[],"mappings":"AAEA;ECCE;EACA;EACA;EDAE;;AAEA;EAEI;EACA;EACA,OCyEA;EA7BN;;ADxCE;EAEI;EACA;EACA,OCiEA;;AD9DJ;EAEI;EACA;EACA,OCwDD;EDvDC;EC4BN","file":"Error404.css"}
+{"version":3,"sourceRoot":"","sources":["Error404.scss","../Tool/Tool.scss"],"names":[],"mappings":"AAEA;ECCE;EACA;EACA;EDAE;;AAEA;EAEI;EACA;EACA,OCyEA;EA7BN;;ADzCM;EAPJ;IASQ;;;AAKR;EAEI;EACA;EACA,OC2DA;ED1DA;;AAEA;EAEI;;AAGJ;EAZJ;IAcQ;IACA;;EAEA;IAEI;;;AAKZ;EAEI;EACA;EACA,OCiCD;EDhCC;ECKN;;ADFM;EARJ;IAUQ","file":"Error404.css"}
