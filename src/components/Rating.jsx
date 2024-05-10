@@ -3,18 +3,19 @@ import '../styles/Rating/Rating.css'
 
 const Rating = ({rate}) => {
   return (
-    <div className='logement__rating'>
     
-        {
-            Array.from( {length: 5}).map( (_,index) => (
+    <>
 
-                index < rate ? <i className="fa-solid fa-star rating--red"></i> :  <i className="fa-solid fa-star rating--grey"></i>
+      {
+        Array.from( {length: 5}).map( (_,index) => (
 
-            ))
+          index < rate ? <i className="fa-solid fa-star rating--red" key={index}></i> :  <i className="fa-solid fa-star rating--grey" key={index}></i>
 
-        }
+        ))
+
+      }
     
-    </div>
+    </>
   )
 }
 
