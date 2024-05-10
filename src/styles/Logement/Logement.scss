@@ -54,16 +54,40 @@
         @media(max-width: 768px)
         {
             @include rond32;
-        }
+        }   
     }
 
     &__tags
     {
-        @include flexRowBetweenCenter;
+        @include flexRowStartWrap;
         max-width: 635px;
+        width: 635px;
+        margin-top: 15px;
+    }
+
+    &__description, &__equipments
+    {
+        max-width: 45%;
+        width: 582px;
+        height: 52px;
         margin-top: 15px;
     }
 
 }
+
+.collapse
+{
+    &__item
+    {
+        padding: 0;
+    }
+}
+
+.collapse__title__text
+{
+    font-size: 17px;
+    font-weight: 700;
+}
+
 
 

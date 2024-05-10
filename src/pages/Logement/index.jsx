@@ -3,6 +3,7 @@ import {useParams, Navigate} from 'react-router-dom'
 import Banner from '../../components/Banner'
 import Rating from '../../components/Rating'
 import Tag from '../../components/Tag'
+import Collapse from '../../components/Collapse'
 import '../../styles/Logement/Logement.css'
 import logements from "../../logements.json"
 
@@ -16,7 +17,7 @@ const Logement = () => {
 
     const logementInfos =  logements.find( (logement) => logement.id === logementId )
 
-    console.log(logementInfos);
+    //console.log(logementInfos);
 
     if(!logementInfos)
     {
@@ -41,8 +42,23 @@ const Logement = () => {
               </h3>
               <img className='logement__picture' src={logementInfos.host.picture} alt={`Profil de ${logementInfos.host.name}`} />
             </div>
-            <Tag tags={logementInfos.tags}/>
-            <Rating rate={logementInfos.rating} />
+            <div className="logement__tags">
+              {
+                logementInfos.tags.map((tag,index) =>
+                (
+                  <Tag key={index+1} text={tag}/>
+                ))
+              }
+            </div>
+            <div className="logement__rating">
+              <Rating rate={logementInfos.rating}/>
+            </div>
+            <div className="logement__description">
+              <Collapse title={"Description"} text={logementInfos.description} array={false}/>
+            </div>
+            <div className="logement__equipments">
+              <Collapse title={"Équipements"} text={logementInfos.equipments} array={true}/>
+            </div>
           </section>
 
         </main>

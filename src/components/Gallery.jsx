@@ -5,8 +5,6 @@ import logements from '../logements.json'
 import { Link } from 'react-router-dom'
 
 const Gallery = () => {
-    //RÉCUPÉRATION DES 6 PREMIERS LOGEMENTS
-    //logements = logements.slice(0, 6)
 
     return (
 

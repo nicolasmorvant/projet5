@@ -37,6 +37,7 @@ const About = () => {
               key = {index + 1} 
               title = {info.title}
               text = {info.text} 
+              array = {false}
             />
           ))}
         </section>
