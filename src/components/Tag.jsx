@@ -1,17 +1,10 @@
 import React from 'react'
 import '../styles/Tag/Tag.css'
 
-const Tag = ({tags}) => {
+const Tag = ({text}) => {
   return (
-    <div className="logement__tags">
-    {
-        tags.map((tag,index) => 
-        (
-            <span className='tag' key={index}>{tag}</span>
-        ))
-    }
-    </div>
-  )
+      <span className='tag'>{text}</span>
+    )
 }
 
 export default Tag
