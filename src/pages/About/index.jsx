@@ -34,7 +34,7 @@ const About = () => {
         <section className="collapse__container">
           {aboutInfos.map( (info, index) => (
             <Collapse
-              id = {index + 1} 
+              key = {index + 1} 
               title = {info.title}
               text = {info.text} 
             />
