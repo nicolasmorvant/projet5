@@ -9,7 +9,7 @@
 }
 .collapse__item {
   padding: 0 113px;
-  height: 52px;
+  min-height: 52px;
   margin-bottom: 30px;
 }
 .collapse__item:last-child {
@@ -38,22 +38,57 @@
   font-size: 24px;
   font-weight: 700;
 }
-.collapse__title__icon:hover {
-  cursor: pointer;
-}
 @media (max-width: 576px) {
   .collapse__title {
     font-size: 13px;
     line-height: 1;
   }
 }
+.collapse__grandeMarge {
+  position: relative;
+  z-index: 10;
+}
+.collapse__icon {
+  transition: transform 0.3s ease-in-out;
+}
+.collapse__icon:hover {
+  cursor: pointer;
+}
+.collapse__icon--up {
+  transform: rotate(180deg);
+}
+.collapse__icon--down {
+  transform: rotate(0deg);
+}
 .collapse__text {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  display: block;
+  padding: 0;
+  z-index: -10;
+  background-color: #FBFBFB;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transform-origin: top;
+  transition: opacity 0.2s ease-in, height 0.2s ease-in;
 }
-.collapse__text--closed {
-  display: none;
+.collapse__text--open {
+  animation-name: deplacementVertical;
+  animation-duration: 0.25s;
+  font-size: 16px;
+  margin-top: -5px;
+  padding: 20px 15px 15px;
+  opacity: 1;
+  height: auto;
+}
+
+@keyframes deplacementVertical {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
 }
 
 /*# sourceMappingURL=Collapse.css.map */

@@ -69,5 +69,31 @@
     text-align: left;
   }
 }
+.banner__nav {
+  z-index: 3;
+  width: 90%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+.banner__nav .fa-solid {
+  font-size: 46px;
+}
+@media (max-width: 576px) {
+  .banner__nav .fa-solid {
+    font-size: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .banner__nav {
+    width: 100%;
+  }
+  .banner__nav .fa-chevron-left {
+    margin-left: 15px;
+  }
+  .banner__nav .fa-chevron-right {
+    margin-right: 15px;
+  }
+}
 
 /*# sourceMappingURL=Banner.css.map */

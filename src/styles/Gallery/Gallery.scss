@@ -4,25 +4,47 @@
 {
   margin-top: 50px;
   padding: 56px 50px;
-  height: 829px;
   width: 100%;
   background-color: #F6F6F6;
-  @include borderRadius;
+  @include borderRadius25;
   @include flexRowBetweenWrap;
+  @include gap50;
 
-  :nth-last-child(-n+3)   
+  @media(min-width: 1400px)
   {
-    margin-top: 50px;
+    column-gap: 30px;
+
+    &__link
+    {
+      width: 340px;
+    }
   }
 
-  @media(max-width: 1250px)
+  @media(max-width: 1399.98px)
   {
-    height: auto;
-
-    :nth-last-child(-n+3)   
+    &__link
     {
-      margin-top: 0;
+      width: 45%;
     }
+  }
+
+  @media(min-width: 1024px)
+  {
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+
+  @media(max-width: 1023.98px)
+  {
+    &__link
+    {
+      width: 100%;
+    }
+  }
+
+  @media(min-width: 900px)
+  {
+    row-gap: 50px;
   }
 
   @media(max-width: 900px)
@@ -31,10 +53,5 @@
       margin-top: 27px;
       padding: 0;
       justify-content: center;
-  }
-
-  @media(max-width: 576px)
-  {
-    overflow-y: scroll;
   }
 }

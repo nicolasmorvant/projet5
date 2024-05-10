@@ -3,7 +3,7 @@
 .banner
 {
     @include flexRowToutCentre;
-    @include borderRadius;
+    @include borderRadius25;
     position: relative;
     height: 223px;
     width: 100%;
@@ -19,7 +19,7 @@
     &::before 
     {
         @include absoluteTopLeft;
-        @include borderRadius;
+        @include borderRadius25;
         @include tailleMax;
         content: "";
         background-color: rgba($noir, 0.5);
@@ -29,7 +29,7 @@
     &__img
     {
         @include absoluteTopLeft;
-        @include borderRadius;
+        @include borderRadius25;
         width: 100%;
         height: 223px;
         object-fit: cover;
@@ -69,5 +69,41 @@
             font-size: 24px;
             text-align: left;
         }
+    }
+
+    &__nav
+    {
+        z-index: 3;
+        width: 90%;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+
+
+        .fa-solid
+        {
+            font-size: 46px;
+
+            @media(max-width: 576px)
+            {
+                font-size: 24px;
+            }
+        }
+
+        @media(max-width: 576px)
+        {
+            width: 100%;
+
+            .fa-chevron-left
+            {
+                margin-left: 15px;
+            }
+
+            .fa-chevron-right
+            {
+                margin-right : 15px;
+            } 
+        }
+
     }
 }

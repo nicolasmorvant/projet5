@@ -1,0 +1,38 @@
+@import "../Tool/Tool";
+
+/*.logement__rating
+{
+
+}*/
+
+.fa-solid
+{
+    font-size: 24px;
+    width: 25px;
+
+    &:not(:last-child)
+    {
+        margin-right: 10px;
+    }
+
+    @media(max-width: 768px)
+    {
+        font-size: 13px;
+        width: 14px;
+
+        &:not(:last-child)
+        {
+            margin-right: 5px;
+        }
+    }
+}
+
+.rating--red
+{
+    color: $rouge;
+}
+
+.rating--grey
+{
+    color: $grisClair;
+}

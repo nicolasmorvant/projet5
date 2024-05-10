@@ -1,0 +1,23 @@
+.logement__tags {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 635px;
+  margin-top: 15px;
+}
+
+.tag {
+  background-color: #FF6060;
+  color: #FFFFFF;
+  height: 25px;
+  min-width: 115px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 3px 20px 2px 20px;
+  border-radius: 10px;
+}
+.tag:not(:first-child) {
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=Tag.css.map */

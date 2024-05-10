@@ -16,7 +16,7 @@
     &__item
     {
         padding: 0 113px;
-        height: 52px;
+        min-height: 52px;
         margin-bottom: 30px;
 
         &:last-child
@@ -47,11 +47,6 @@
         font-size: 24px;
         font-weight: 700;
         
-        &__icon:hover
-        {
-            cursor: pointer;
-        }
-        
         @media(max-width: 576px)
         {
             font-size: 13px;
@@ -59,19 +54,65 @@
         }
     }
 
+    &__grandeMarge
+    {
+        position: relative;
+        z-index: 10;
+    }
+
+    &__icon
+    {
+        transition: transform 0.3s ease-in-out;
+
+        &:hover
+        {
+            cursor: pointer;  
+        }
+
+        &--up
+        {
+            transform: rotate(180deg);
+            
+        }
+
+        &--down
+        {
+            transform: rotate(0deg);
+        }
+    }
+
     &__text
     {
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
-        display: block; 
+        padding: 0;
+        z-index: -10;
+        background-color: $grisBlanc;
+        opacity: 0;  
+        height: 0;
+        overflow: hidden;
+        transform-origin: top;
+        transition: opacity 0.2s ease-in, height 0.2s ease-in;
 
-        &--closed
-        {
-            display: none;       
+        &--open
+        {  
+            animation-name: deplacementVertical;
+            animation-duration: 0.25s;
+            font-size: 16px;
+            margin-top: -5px;
+            padding: 20px 15px 15px;
+            opacity: 1;
+            height: auto;
         }
     }
+}
 
-    
-    
-
+@keyframes deplacementVertical
+{
+    from{
+        transform: scaleY(0);
+    }
+    to{
+        transform: scaleY(1);
+    } 
 }
