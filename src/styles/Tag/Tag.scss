@@ -1,12 +1,5 @@
 @import '../Tool/Tool';
 
-.logement__tags
-{
-    @include flexRowBetweenCenter;
-    max-width: 635px;
-    margin-top: 15px;
-}
-
 .tag
 {
     background-color: $rouge;
