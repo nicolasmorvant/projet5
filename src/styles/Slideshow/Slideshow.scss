@@ -13,6 +13,11 @@
         @include sizeCustom(100%,335px);
     }
 
+    @media(max-width: 576px)
+    {
+        max-height: 255px;
+    }
+
     &__img
     {
         @include sizeCustom(100%,100%);
@@ -20,7 +25,9 @@
         @include absoluteTopLeft;      
         opacity: 0;
         transition: opacity 0.4s ease-in-out;
-        object-fit: cover; 
+        object-fit: cover;
+
+        
     }
 
     &__nav
@@ -43,6 +50,8 @@
                 font-size: 24px;
             }
         }
+
+        
     }
 
     &__num
