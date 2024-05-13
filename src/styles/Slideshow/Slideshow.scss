@@ -1,6 +1,5 @@
 @import "../Tool/Tool";
 
-
 .slideshow
 {
     @include sizeCustom(100%,415px);
@@ -26,8 +25,6 @@
         opacity: 0;
         transition: opacity 0.4s ease-in-out;
         object-fit: cover;
-
-        
     }
 
     &__nav
@@ -50,8 +47,6 @@
                 font-size: 24px;
             }
         }
-
-        
     }
 
     &__num
