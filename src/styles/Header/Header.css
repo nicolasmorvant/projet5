@@ -1,8 +1,10 @@
 @charset "UTF-8";
 .header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
   margin: 50px 100px;
 }
 
@@ -22,9 +24,17 @@
     width: 190px;
   }
 }
+@media (max-width: 320px) {
+  .navbar {
+    width: auto;
+  }
+}
 .navbar__list {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: nowrap;
 }
 .navbar__item:last-child {
   margin-left: 57px;
@@ -36,8 +46,8 @@
 }
 .navbar__link {
   color: #000000;
-  font-weight: 500;
   font-size: 24px;
+  font-weight: 500;
 }
 .navbar__link:hover {
   cursor: pointer;

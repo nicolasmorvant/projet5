@@ -1,20 +1,17 @@
-import React from "react"
+import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from './Header'
+import Footer from './Footer'
 import Home from '../pages/Home'
-import About from "../pages/About";
-import Logement from '../pages/Logement';
-import Error404 from '../pages/Error404';
-
+import About from '../pages/About'
+import Logement from '../pages/Logement'
+import Error404 from '../pages/Error404'
 
 const Router = () => {
-
-    return(
-
+    return (
         <BrowserRouter>
             <Header />
-            <Routes>  
+            <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/logement/:logementId" element={<Logement />} />
@@ -23,8 +20,6 @@ const Router = () => {
             <Footer />
         </BrowserRouter>
     )
-
 }
 
 export default Router
-

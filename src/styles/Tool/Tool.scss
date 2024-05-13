@@ -1,88 +1,38 @@
-//MIXINS
-@mixin flexColumnStartRowCenter
+//FLEXBOX
+@mixin flexCustom($direction, $justify, $align, $wrap)
 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
 }
 
-@mixin flexRowStartWrap
+//FONT
+@mixin fontSizeFontWeight($fontSize, $fontWeight)
 {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
 }
 
-@mixin flexRowToutCentre
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin flexRowBetweenCenter 
-{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@mixin flexRowEnd
-{
-  display: flex;
-  justify-content: flex-end;
-}
-
-@mixin flexRowBetweenWrap
-{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-@mixin font18-500
-{
-  font-size: 18px;
-  font-weight: 500;
-}
-
-@mixin gap50
-{
-  row-gap: 50px;
-  column-gap: 50px;
-}
-
-@mixin tailleMax
-{
-  width: 100%;
-  height: 100%;
-}
-
+//ESPACEMENT
 @mixin zeroMarges
 {
   margin: 0;
   padding: 0;
 }
 
-@mixin marginCinquanteCent
+//TAILLE
+@mixin sizeCustom($width,$height)
 {
-  margin: 50px 100px;
+  width: $width;
+  height: $height;
 }
 
-@mixin marginCentZero
+@mixin fullWidthMaxWidth100
 {
-  margin: 100px 0;
-}
-
-@mixin margin20
-{
-  margin: 20px;
-}
-
-@mixin marginBottom20
-{
-  margin-bottom: 20px;
+  max-width: 100%;
+  width: 100%; 
 }
 
 @mixin absoluteTopLeft
@@ -92,40 +42,43 @@
   left: 0;
 }
 
-@mixin rond32
+@mixin absoluteBottom15Left20
 {
-  width: 32px;
-  height: 32px;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+}
+
+//CERCLE
+@mixin cercle($diametre)
+{
+  width: $diametre;
+  height: $diametre;
   border-radius: 50%;
 }
 
-@mixin rond64
+//BORDER
+@mixin borderRadius($radius)
 {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
+  border-radius: $radius;
 }
 
-@mixin carre340
+@mixin borderBottomRadius($radius) 
 {
-  width: 340px;
-  height: 340px;
+  border-bottom-left-radius: $radius;
+  border-bottom-right-radius: $radius;
 }
 
-@mixin borderRadius10
-{
-  border-radius: 10px;
-}
-
-@mixin borderRadius25
-{
-  border-radius: 25px;
-}
-
-//VARIABLES
+//COULEURS
 $noir: #000000;
 $blanc: #FFFFFF;
 $rouge: #FF6060;
 $gris: #C4C4C4;
 $grisClair: #E3E3E3;
 $grisBlanc: #FBFBFB;
+
+@mixin textColorBackgroundColor($textColor, $backgroundColor) 
+{
+  color: $textColor;
+  background-color: $backgroundColor;
+}

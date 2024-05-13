@@ -2,18 +2,20 @@
 .footer {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  background-color: #000000;
+  flex-wrap: nowrap;
   color: #FFFFFF;
-  height: 209px;
+  background-color: #000000;
   width: 100%;
+  height: 209px;
   padding: 66px 0;
   /* AJOUT D'UNE MEDIA QUERY AVEC UN BREAKPOINT POUR LA VERSION MOBILE À 768px */
 }
 .footer__img {
-  margin-bottom: 50px;
   width: 122px;
   height: auto;
+  margin-bottom: 50px;
   filter: brightness(0) invert(1);
 }
 @media (max-width: 768px) {
@@ -28,8 +30,8 @@
 }
 @media (max-width: 768px) {
   .footer__title {
-    width: 133px;
     padding: 15px 10px 0;
+    width: 133px;
     font-size: 12px;
     text-align: center;
   }

@@ -2,17 +2,18 @@
 
 .tag
 {
-    background-color: $rouge;
-    color: $blanc;
+    @include textColorBackgroundColor($blanc,$rouge);
+    @include fontSizeFontWeight(14px, 700);
+    @include borderRadius(10px);
+    padding: 3px 20px 2px;
     height: 25px;
     min-width: 115px;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 3px 20px 2px 20px;
-    @include borderRadius10;
+    text-align: center;
 
-    &:not(:first-child)
+    @media(max-width: 768px)
     {
-        margin-left: 10px;
+        @include fontSizeFontWeight(10px, 700);
+        min-width: 84px;
+        height: 18px;
     }
 }

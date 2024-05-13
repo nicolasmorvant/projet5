@@ -2,18 +2,14 @@
 
 .footer
 {
-    @include flexColumnStartRowCenter;
-    background-color: $noir;
-    color: $blanc;
-    height: 209px;
-    width: 100%;
+    @include flexCustom(column,flex-start,center,nowrap);
+    @include textColorBackgroundColor($blanc,$noir);
+    @include sizeCustom(100%,209px);
     padding: 66px 0;
-
     &__img
     {
+        @include sizeCustom(122px,auto);
         margin-bottom: 50px;
-        width: 122px;
-        height: auto;
         filter: brightness(0) invert(1);
 
         @media(max-width: 768px)
@@ -24,14 +20,13 @@
 
     &__title    
     {
-        font-size: 24px;
-        font-weight: 500;
+        @include fontSizeFontWeight(24px, 500);
         height: 46px;
 
         @media(max-width: 768px)
         {
-            width: 133px;
             padding: 15px 10px 0;
+            width: 133px;
             font-size: 12px;
             text-align: center;
         }

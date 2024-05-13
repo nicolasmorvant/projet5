@@ -32,12 +32,12 @@ body
 
 .main
 {
-  @include marginCinquanteCent;
-  @include flexColumnStartRowCenter;
+  @include flexCustom(column,flex-start,center,nowrap);
+  margin: 50px 100px;
 
   /* AJOUT D'UNE MEDIA QUERY AVEC UN BREAKPOINT POUR LA VERSION MOBILE À 768px*/
   @media(max-width: 768px)
   {
-    @include margin20;
+    margin: 20px;
   }
 }

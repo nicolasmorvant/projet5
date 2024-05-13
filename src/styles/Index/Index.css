@@ -26,10 +26,12 @@ body {
 }
 
 .main {
-  margin: 50px 100px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  flex-wrap: nowrap;
+  margin: 50px 100px;
   /* AJOUT D'UNE MEDIA QUERY AVEC UN BREAKPOINT POUR LA VERSION MOBILE À 768px*/
 }
 @media (max-width: 768px) {

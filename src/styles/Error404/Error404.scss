@@ -2,15 +2,13 @@
 
 .error
 {
-    @include flexColumnStartRowCenter;
-    justify-content: space-between;
-
+    @include flexCustom(column,space-between,center,nowrap);
+    
     &__titre
     {
-        font-size: 288px;
-        font-weight: 700;
+        @include fontSizeFontWeight(288, 700);
+        margin: 100px 0;
         color: $rouge;
-        @include marginCentZero;
 
         @media(max-width: 768px)
         {
@@ -21,8 +19,7 @@
 
     &__message
     {
-        font-size: 36px;
-        font-weight: 500;
+        @include fontSizeFontWeight(36, 500);
         color: $rouge;
         text-align: center;
 
@@ -45,11 +42,10 @@
 
     &__link
     {
-        font-size: 18px;
-        font-weight: 500;
+        @include fontSizeFontWeight(18, 500);
+        margin: 100px 0;
         color: $noir;
         text-decoration: underline;
-        @include marginCentZero;
 
         @media(max-width: 768px)
         {

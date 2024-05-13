@@ -2,91 +2,166 @@
 
 .logement
 {
+    @include flexCustom(row,space-between,flex-start,wrap);
     align-self: flex-start;
     margin-top: 30px;
-    @include flexRowBetweenCenter;
-    flex-wrap: wrap;
     width: 100%;
-
     
     &__infos
     {
-        max-width: 635px;
-        width: 635px; 
+        flex-basis: 80%;
+        order: -3;
     }
 
     &__title
     {
-        font-size: 36px;
-        font-weight: 500;
+        @include fontSizeFontWeight(36px, 500);
         color: $rouge;
-    }
 
+        @media(max-width: 768px)
+        {
+            @include fontSizeFontWeight(18px, 500);
+        }
+    }
     
     &__area
     {
+        @include fontSizeFontWeight(18px, 500);
+        margin-top: 10px;
         max-width: 350px;
-        @include font18-500;
+
+        @media(max-width: 1024px)
+        {
+            margin-top: 10px;
+        }
+
+        @media(max-width: 768px)
+        {
+            @include fontSizeFontWeight(14px, 500);
+        }
     }
 
     &__host
     {
-        width: 167px;
-        height: 64px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        @include sizeCustom(167px,64px);
+        @include flexCustom(row,flex-end,center,nowrap);
+
+        @media(max-width: 1092px)
+        {
+            margin-top: 15px;
+        }       
+
+        @media(max-width: 768px)
+        {
+            @include sizeCustom(93px,33px);
+        }
     }
 
     &__name
     {
-        @include font18-500;
+        @include fontSizeFontWeight(18px, 500);
+        margin-right: 10px;
         color: $rouge;
         text-align: right;
-        margin-right: 10px;
         max-width: 93px;
+
+        @media(max-width: 768px)
+        {
+            @include fontSizeFontWeight(12px, 500);
+        }
     }
 
     &__picture
     {
-        @include rond64;
+        @include cercle(64px);
 
         @media(max-width: 768px)
         {
-            @include rond32;
+            @include cercle(32px);
         }   
     }
 
     &__tags
     {
-        @include flexRowStartWrap;
+        @include flexCustom(row,flex-start,flex-start,wrap);
+        column-gap: 10px;
+        margin-top: 30px;
         max-width: 635px;
         width: 635px;
-        margin-top: 15px;
+        
+        @media(max-width: 1092px)
+        {
+            @include fullWidthMaxWidth100;
+            row-gap: 5px;
+            margin-top: 15px;
+            order: -2;
+        }
+    }
+
+    &__rating
+    {
+        @include flexCustom(row,flex-start,center,nowrap);
+        margin-top: 30px;
+
+        @media(max-width: 1092px)
+        {
+            order: -1;
+        }
+
+        @media(max-width:768px)
+        {
+            margin-top: 15px;
+            height: 33px;
+        }
+    }
+
+    &__descEquip
+    {
+        @include flexCustom(row,space-between,flex-start,nowrap);
+        margin-top: 30px;
+
+        @media(max-width: 1092px)
+        {
+            row-gap: 20px;
+            flex-direction: column;
+        }
     }
 
     &__description, &__equipments
     {
-        max-width: 45%;
-        width: 582px;
-        height: 52px;
-        margin-top: 15px;
+        width: 46%;
+
+        @media(max-width: 1092px)
+        {
+            width: 100%;    
+        }
     }
 
-}
-
-.collapse
-{
-    &__item
+    .collapse
     {
-        padding: 0;
-    }
-}
+        &__item
+        {
+            padding: 0;
+        }
 
-.collapse__title__text
-{
-    font-size: 17px;
-    font-weight: 700;
+        &__title__text
+        {
+            @include fontSizeFontWeight(17px, 700);
+
+            @media(max-width: 768px)
+            {
+                @include fontSizeFontWeight(13px, 700);
+            }
+        }
+
+        &__icon
+        {
+            @media(max-width: 768px)
+            {
+                @include fontSizeFontWeight(16px, 700);
+            }
+        }
+    }
 }
 
 

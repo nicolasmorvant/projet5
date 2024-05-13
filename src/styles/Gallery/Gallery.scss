@@ -2,17 +2,18 @@
 
 .gallery
 {
+  @include borderRadius(25px);
+  @include flexCustom(row,space-between,flex-start,wrap);
+  @include rowGapColumnGap($row: 50px, $column: 50px);
   margin-top: 50px;
   padding: 56px 50px;
   width: 100%;
   background-color: #F6F6F6;
-  @include borderRadius25;
-  @include flexRowBetweenWrap;
-  @include gap50;
+
 
   @media(min-width: 1400px)
   {
-    column-gap: 30px;
+    row-gap: 30px;
 
     &__link
     {
@@ -30,8 +31,9 @@
 
   @media(min-width: 1024px)
   {
-    justify-content: space-between;
     row-gap: 30px;
+    justify-content: space-between;
+    
   }
 
   @media(max-width: 1023.98px)
@@ -49,9 +51,9 @@
 
   @media(max-width: 900px)
   {
-      background-color: initial;
-      margin-top: 27px;
-      padding: 0;
-      justify-content: center;
+    margin-top: 27px;
+    padding: 0;
+    background-color: initial;
+    justify-content: center;
   }
 }

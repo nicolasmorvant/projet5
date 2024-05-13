@@ -2,14 +2,13 @@
 
 .header
 {
-  @include flexRowBetweenCenter;
-  @include marginCinquanteCent;
+  @include flexCustom(row,space-between,center,nowrap);
+  margin: 50px 100px;
 }
 
 .header__logo
 {
-  width: 210px;
-  height: auto;
+  @include sizeCustom(210px, auto);
 
   @media(max-width: 768px)
   {
@@ -25,9 +24,14 @@
     width: 190px;
   }
 
+  @media(max-width: 320px)
+  {
+    width: auto;
+  }
+
   &__list
   {
-    @include flexRowEnd;
+    @include flexCustom(row,flex-end,flex-start,nowrap);
   }
 
   &__item:last-child 
@@ -43,8 +47,7 @@
   &__link
   {
     color: $noir;
-    font-weight: 500;
-    font-size: 24px;
+    @include fontSizeFontWeight(24px, 500);
 
     &:hover
     {
@@ -72,12 +75,12 @@
 {
   .header
   {
-    @include margin20;
+    margin: 20px;
 
-      .navbar__item:first-child 
-      {
-        flex-grow: 1;
-        max-width: 55px;
-      }
-   }
+    .navbar__item:first-child 
+    {
+      flex-grow: 1;
+      max-width: 55px;
+    }
+ }
 }

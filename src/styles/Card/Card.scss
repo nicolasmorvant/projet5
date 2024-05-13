@@ -2,8 +2,8 @@
 
 .card
 {
-    @include carre340;
-    @include borderRadius10;
+    @include sizeCustom(340px,340px);
+    @include borderRadius(10px);
     background-color: $rouge;
     background-image: linear-gradient(
         rgba(255, 255, 255, 0),
@@ -30,7 +30,7 @@
 
         &:not(:last-child)
         {
-            @include marginBottom20;
+            margin-bottom: 20px;
         }
     }
 
@@ -38,8 +38,8 @@
     {
         
         @include absoluteTopLeft;
-        @include tailleMax;
-        @include borderRadius10;
+        @include sizeCustom(100%,100%);
+        @include borderRadius(10px);
         object-fit: cover;
         transition: transform 0.8s ease;
 
@@ -51,13 +51,10 @@
 
     &__title
     {
-        position: absolute;
-        bottom: 15px;
-        left: 20px;
+        @include fontSizeFontWeight(18px, 700);
+        @include absoluteBottom15Left20;
         color: $blanc;
         height: 52px;
-        font-size: 18px;
-        font-weight: 700;
         overflow: auto;
         padding-right: 20px;
 

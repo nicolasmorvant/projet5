@@ -37,13 +37,13 @@
   transform: scale(1.05);
 }
 .card__title {
+  font-size: 18px;
+  font-weight: 700;
   position: absolute;
   bottom: 15px;
   left: 20px;
   color: #FFFFFF;
   height: 52px;
-  font-size: 18px;
-  font-weight: 700;
   overflow: auto;
   padding-right: 20px;
 }
