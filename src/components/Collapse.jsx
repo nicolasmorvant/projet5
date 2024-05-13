@@ -17,7 +17,7 @@ const Collapse = ({ title, text, array }) => {
       <div className="collapse__item">
         <h2 className={`collapse__title ${estOuvert ? "collapse__grandeMarge" : ""}`}>
           <span className='collapse__title__text'>{title}</span>
-          <i className={`collapse__icon collapse__icon${estOuvert ? "--down" : "--up" } fa-solid fa-chevron-up`}  onClick={toggleCollapse}></i>
+          <i className={`collapse__icon collapse__icon${estOuvert ? "--down" : "--up" } fa-solid fa-chevron-up`}  onClick={() => toggleCollapse}></i>
         </h2>
         {array ? 
           (
