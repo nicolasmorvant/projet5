@@ -8,9 +8,8 @@ const Gallery = () => {
     return (
         <section className="gallery">
             {logements.map((logement) => (
-                <Link to={`/logement/${logement.id}`} className="gallery__link">
+                <Link to={`/logement/${logement.id}`} key={logement.id} className="gallery__link">
                     <Card
-                        key={logement.id}
                         title={logement.title}
                         cover={logement.cover}
                     />
