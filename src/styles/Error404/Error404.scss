@@ -6,7 +6,7 @@
     
     &__titre
     {
-        @include fontSizeFontWeight(288, 700);
+        @include fontSizeFontWeight(288px, 700);
         margin: 100px 0;
         color: $rouge;
 
@@ -19,7 +19,7 @@
 
     &__message
     {
-        @include fontSizeFontWeight(36, 500);
+        @include fontSizeFontWeight(36px, 500);
         color: $rouge;
         text-align: center;
 
@@ -42,7 +42,7 @@
 
     &__link
     {
-        @include fontSizeFontWeight(18, 500);
+        @include fontSizeFontWeight(18px, 500);
         margin: 100px 0;
         color: $noir;
         text-decoration: underline;
