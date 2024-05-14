@@ -27,6 +27,9 @@
   transition: opacity 0.4s ease-in-out;
   object-fit: cover;
 }
+.slideshow__img--active {
+  opacity: 1;
+}
 .slideshow__nav {
   display: flex;
   flex-direction: row;
@@ -64,10 +67,6 @@
   .slideshow__num {
     display: none;
   }
-}
-
-.active {
-  opacity: 1;
 }
 
 /*# sourceMappingURL=Slideshow.css.map */

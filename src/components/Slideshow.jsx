@@ -27,7 +27,7 @@ const Slideshow = ({ images, text }) => {
                     src={img}
                     alt={`${text}-${index + 1}`}
                     key={index + 1}
-                    className={`slideshow__img ${index + 1 === indexImg ? 'active' : ''}`}
+                    className={`slideshow__img ${index + 1 === indexImg ? 'slideshow__img--active' : ''}`}
                 />
             ))}
 
