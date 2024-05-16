@@ -1,19 +1,14 @@
-@import "../Tool/Tool";
+@import "../Tool/Mixins";
+@import "../Tool/Variables";
 
 .banner
 {
     @include flexCustom(row,center,center,nowrap);
     @include borderRadius(25px);
     @include sizeCustom(100%, 223px);
+    @include shadow;
     position: relative;
-    box-shadow: 0px 4px 4px 0px rgba($noir, 0.25);
     color: $blanc;
-
-    @media(max-width: 576px)
-    {
-        justify-content: flex-start;
-        height: 111px;
-    }
 
     &::before 
     {
@@ -22,7 +17,6 @@
         @include sizeCustom(100%,100%);
         content: "";
         background-color: rgba($noir, 0.5);
-        
     }
 
     &__img
@@ -32,11 +26,6 @@
         @include sizeCustom(100%, 223px);
         object-fit: cover;
         z-index: -1;
-        
-        @media(max-width: 576px)
-        {
-            height: 111px;
-        }
     }
 
     &__title
@@ -45,7 +34,6 @@
         line-height: 68px;
         z-index: 2;
 
-        /* TABLETTES */
         @media(max-width: 1024px)
         {
             margin: 0 20px;
@@ -58,12 +46,23 @@
             font-size: 30px;
             margin-left: 16px;
         }
+    }
 
-        @media(max-width: 576px)
+    @media(max-width: 576px)
+    {
+        justify-content: flex-start;
+        height: 111px;
+
+        &__title
         {
             width: 225px;
             font-size: 24px;
             text-align: left;
         }
+
+        &__img
+        {
+            height: 111px;
+        }       
     }
 }

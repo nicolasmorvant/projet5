@@ -1,14 +1,15 @@
-@import "../Tool/Tool";
+@import "../Tool/Mixins";
+@import "../Tool/Variables";
 
 .error
 {
     @include flexCustom(column,space-between,center,nowrap);
+    @include textColorAlign($rouge, center);
     
     &__titre
     {
         @include fontSizeFontWeight(288px, 700);
         margin: 100px 0;
-        color: $rouge;
 
         @media(max-width: 768px)
         {
@@ -19,8 +20,6 @@
     &__message
     {
         @include fontSizeFontWeight(36px, 500);
-        color: $rouge;
-        text-align: center;
 
         br
         {
@@ -42,9 +41,8 @@
     &__link
     {
         @include fontSizeFontWeight(18px, 500);
+        @include colorUnderline($noir);
         margin: 100px 0;
-        color: $noir;
-        text-decoration: underline;
 
         @media(max-width: 768px)
         {

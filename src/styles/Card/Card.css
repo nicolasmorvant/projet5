@@ -2,26 +2,19 @@
   width: 340px;
   height: 340px;
   border-radius: 10px;
-  background-color: #FF6060;
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(10, 10, 10, 0), rgba(4, 4, 4, 0.205), rgba(0, 0, 0, 0.5));
+  /*COULEUR ROUGE MAQUETTE
+  background-color: $rouge;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(10, 10, 10, 0),
+      rgba(4, 4, 4, 0.205),
+      rgba(0, 0, 0, 0.5)
+  );*/
   position: relative;
   overflow: hidden;
 }
 .card:hover {
   cursor: pointer;
-}
-@media (max-width: 1400px) {
-  .card {
-    width: 100%;
-  }
-}
-@media (max-width: 576px) {
-  .card {
-    height: 255px;
-  }
-  .card:not(:last-child) {
-    margin-bottom: 20px;
-  }
 }
 .card__img {
   position: absolute;
@@ -47,7 +40,18 @@
   overflow: auto;
   padding-right: 20px;
 }
+@media (max-width: 1400px) {
+  .card {
+    width: 100%;
+  }
+}
 @media (max-width: 576px) {
+  .card {
+    height: 255px;
+  }
+  .card:not(:last-child) {
+    margin-bottom: 20px;
+  }
   .card__title {
     height: initial;
   }

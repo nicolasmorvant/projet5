@@ -1,59 +1,58 @@
-@import "../Tool/Tool";
+@import "../Tool/Mixins";
+@import "../Tool/Variables";
 
 .gallery
 {
-  @include borderRadius(25px);
-  @include flexCustom(row,space-between,flex-start,wrap);
-  @include rowGapColumnGap($row: 50px, $column: 50px);
-  margin-top: 50px;
-  padding: 56px 50px;
-  width: 100%;
-  background-color: #F6F6F6;
+    @include borderRadius(25px);
+    @include flexCustom(row,space-between,flex-start,wrap);
+    @include rowGapColumnGap($row: 50px, $column: 50px);
+    margin-top: 50px;
+    padding: 56px 50px;
+    width: 100%;
+    background-color: $bgGallery;
 
-
-  @media(min-width: 1400px)
-  {
-    row-gap: 30px;
-
-    &__link
+    @media(min-width: 1400px)
     {
-      width: 340px;
-    }
-  }
+        row-gap: 30px;
 
-  @media(max-width: 1399.98px)
-  {
-    &__link
+        &__link
+        {
+            width: 340px;
+        }
+    }
+
+    @media(max-width: 1400px)
     {
-      width: 45%;
+        &__link
+        {
+            width: 45%;
+        }
     }
-  }
 
-  @media(min-width: 1024px)
-  {
-    row-gap: 30px;
-    justify-content: space-between;
-    
-  }
-
-  @media(max-width: 1023.98px)
-  {
-    &__link
+    @media(min-width: 1024px)
     {
-      width: 100%;
+        row-gap: 30px;
+        justify-content: space-between;
     }
-  }
 
-  @media(min-width: 900px)
-  {
-    row-gap: 50px;
-  }
+    @media(max-width: 1024px)
+    {
+        &__link
+        {
+            width: 100%;
+        }
+    }
 
-  @media(max-width: 900px)
-  {
-    margin-top: 27px;
-    padding: 0;
-    background-color: initial;
-    justify-content: center;
-  }
+    @media(min-width: 900px)
+    {
+        row-gap: 50px;
+    }
+
+    @media(max-width: 900px)
+    {
+        margin-top: 27px;
+        padding: 0;
+        background-color: initial;
+        justify-content: center;
+    }
 }

@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["Rating.scss","../Tool/Tool.scss"],"names":[],"mappings":"AAEA;EAEI;EACA;;AAEA;EAEI;;AAGJ;EAVJ;IAYQ;IACA;;EAEA;IAEI;;;;AAKZ;EAEI,OCgDI;;;AD7CR;EAEI,OC6CQ","file":"Rating.css"}
+{"version":3,"sourceRoot":"","sources":["Rating.scss","../Tool/Variables.scss"],"names":[],"mappings":"AAEA;EAEI;EACA;;AAEA;EAEI;;AAGJ;EAVJ;IAYQ;IACA;;EAEA;IAEI;;;;AAKZ;EAEI,OCvBI;;;AD0BR;EAEI,OC1BQ","file":"Rating.css"}

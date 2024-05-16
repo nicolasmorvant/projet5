@@ -1,4 +1,5 @@
-@import "../Tool/Tool";
+@import "../Tool/Mixins";
+@import "../Tool/Variables";
 
 .footer
 {
@@ -6,6 +7,12 @@
     @include textColorBackgroundColor($blanc,$noir);
     @include sizeCustom(100%,209px);
     padding: 66px 0;
+
+    @media(max-width: 768px)
+    {
+        justify-content: center;
+    }
+    
     &__img
     {
         @include sizeCustom(122px,auto);
@@ -30,11 +37,5 @@
             font-size: 12px;
             text-align: center;
         }
-    }
-
-    /* AJOUT D'UNE MEDIA QUERY AVEC UN BREAKPOINT POUR LA VERSION MOBILE À 768px */
-    @media(max-width: 768px)
-    {
-        justify-content: center;
     }
 }

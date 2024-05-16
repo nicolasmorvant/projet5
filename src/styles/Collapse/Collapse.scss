@@ -1,4 +1,5 @@
-@import "../Tool/Tool";
+@import "../Tool/Mixins";
+@import "../Tool/Variables";
 
 .collapse
 {
@@ -7,7 +8,7 @@
         margin-top: 50px;   
         width: 100%;
 
-        @media(max-width: 765px)
+        @media(max-width: 768px)
         {
             margin: 30px 0 15px;
         }
@@ -37,11 +38,16 @@
     &__title
     {
         @include flexCustom(row,space-between,center,nowrap);    
-        @include fontSizeFontWeight(24, 700);
+        @include fontSizeFontWeight(24px, 700);
         @include textColorBackgroundColor($blanc, $rouge);
         @include borderRadius(5px);
         padding: 10px 20px 10px 15px;
         line-height: 34px;
+
+        @media(max-width: 768px)
+        {
+            font-size: 18px;
+        }
         
         @media(max-width: 576px)
         {
@@ -58,12 +64,8 @@
 
     &__icon
     {
+        @include hoverPointer;
         transition: transform 0.3s ease-in-out;
-
-        &:hover
-        {
-            cursor: pointer;  
-        }
 
         &--down
         {
@@ -98,6 +100,11 @@
             padding: 20px 15px 15px;
             visibility: visible;
             height: auto;
+
+            @media(max-width: 576px)
+            {
+                font-size: 12px;
+            }
         }
     }
 }

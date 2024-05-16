@@ -48,23 +48,23 @@
   margin: 0;
   width: auto;
 }
+.slideshow__nav .fa-solid:hover {
+  cursor: pointer;
+}
 @media (max-width: 768px) {
   .slideshow__nav .fa-solid {
     font-size: 24px;
   }
 }
-.slideshow__nav .fa-solid:hover {
-  cursor: pointer;
-}
 .slideshow__num {
+  color: #FFFFFF;
+  text-align: center;
   font-size: 18px;
   font-weight: 500;
   width: 100%;
-  text-align: center;
   position: absolute;
   bottom: 20px;
   z-index: 999;
-  color: #FFFFFF;
 }
 @media (max-width: 768px) {
   .slideshow__num {

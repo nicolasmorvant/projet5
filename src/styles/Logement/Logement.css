@@ -29,11 +29,6 @@
   margin-top: 10px;
   max-width: 350px;
 }
-@media (max-width: 1024px) {
-  .logement__area {
-    margin-top: 10px;
-  }
-}
 @media (max-width: 768px) {
   .logement__area {
     font-size: 14px;
@@ -61,11 +56,11 @@
   }
 }
 .logement__name {
+  color: #FF6060;
+  text-align: right;
   font-size: 18px;
   font-weight: 500;
   margin-right: 10px;
-  color: #FF6060;
-  text-align: right;
   max-width: 93px;
 }
 @media (max-width: 768px) {
@@ -131,7 +126,7 @@
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: nowrap;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 @media (max-width: 1092px) {
   .logement__descEquip {

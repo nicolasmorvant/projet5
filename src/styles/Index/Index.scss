@@ -1,4 +1,4 @@
-@import "../Tool/Tool";
+@import "../Tool/Mixins";
 
 /* RESET STYLES PAR DÉFAUT NAVIGATEUR */
   *
@@ -35,7 +35,6 @@ body
   @include flexCustom(column,flex-start,center,nowrap);
   margin: 50px 100px;
 
-  /* AJOUT D'UNE MEDIA QUERY AVEC UN BREAKPOINT POUR LA VERSION MOBILE À 768px*/
   @media(max-width: 768px)
   {
     margin: 20px;

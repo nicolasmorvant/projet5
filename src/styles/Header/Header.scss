@@ -1,86 +1,83 @@
-@import "../Tool/Tool";
+@import "../Tool/Mixins";
+@import "../Tool/Variables";
 
 .header
 {
-  @include flexCustom(row,space-between,center,nowrap);
-  margin: 50px 100px;
+    @include flexCustom(row,space-between,center,nowrap);
+    margin: 50px 100px;
+
+    @media(max-width: 768px)
+    {
+        margin: 20px;        
+    }
 }
 
 .header__logo
 {
-  @include sizeCustom(210px, auto);
+    @include sizeCustom(210px, auto);
 
-  @media(max-width: 768px)
-  {
-    max-width: 145px;
-    height: auto;
-  }
+    @media(max-width: 768px)
+    {
+        max-width: 145px;
+        height: auto;
+    }
 }
 
 .navbar
 {
-  @media(max-width: 768px)
-  {
-    width: 190px;
-  }
-
-  @media(max-width: 320px)
-  {
-    width: auto;
-  }
-
-  &__list
-  {
-    @include flexCustom(row,flex-end,flex-start,nowrap);
-  }
-
-  &__item:last-child 
-  {
-    margin-left: 57px;
-
     @media(max-width: 768px)
     {
-      margin-left: 26px;
+        width: 190px;
     }
-  }
 
-  &__link
-  {
-    color: $noir;
-    @include fontSizeFontWeight(24px, 500);
-
-    &:hover
+    @media(max-width: 320px)
     {
-      cursor: pointer;
+        width: auto;
     }
 
-    &--selected 
+    &__list
     {
-      text-decoration: underline;
+        @include flexCustom(row,flex-end,flex-start,nowrap);
     }
 
-    @media(max-width: 768px)
+    &__item
     {
-      line-height: 20px;
-      font-size: 12px;
-      font-variant-caps: all-small-caps;
+        &:first-child
+        {
+            @media(max-width: 768px)
+            {
+                flex-grow: 1;
+                max-width: 55px;
+            }
+        }
+
+        &:last-child 
+        {
+            margin-left: 57px;
+
+            @media(max-width: 768px)
+            {
+                margin-left: 26px;
+            }
+        }
     }
-  }
 
-}
-
-
-/* AJOUT D'UNE MEDIA QUERY AVEC UN BREAKPOINT POUR LA VERSION MOBILE À 768px*/
-@media(max-width: 768px)
-{
-  .header
-  {
-    margin: 20px;
-
-    .navbar__item:first-child 
+    &__link
     {
-      flex-grow: 1;
-      max-width: 55px;
+        @include fontSizeFontWeight(24px, 500);
+        @include hoverPointer;
+        color: $noir;
+
+        &--selected 
+        {
+            text-decoration: underline;
+        }
+
+        @media(max-width: 768px)
+        {
+            line-height: 20px;
+            font-size: 12px;
+            font-variant-caps: all-small-caps;
+        }
     }
- }
 }

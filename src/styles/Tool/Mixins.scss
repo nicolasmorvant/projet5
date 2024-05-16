@@ -22,6 +22,12 @@
   padding: 0;
 }
 
+@mixin rowGapColumnGap($row, $column)
+{
+  row-gap: $row;
+  column-gap: $column;
+}
+
 //TAILLE
 @mixin sizeCustom($width,$height)
 {
@@ -42,11 +48,11 @@
   left: 0;
 }
 
-@mixin absoluteBottom15Left20
+@mixin absoluteBottomLeft($bottom,$left)
 {
   position: absolute;
-  bottom: 15px;
-  left: 20px;
+  bottom: $bottom;
+  left: $left;
 }
 
 //CERCLE
@@ -70,15 +76,34 @@
 }
 
 //COULEURS
-$noir: #000000;
-$blanc: #FFFFFF;
-$rouge: #FF6060;
-$gris: #C4C4C4;
-$grisClair: #E3E3E3;
-$grisBlanc: #FBFBFB;
-
 @mixin textColorBackgroundColor($textColor, $backgroundColor) 
 {
   color: $textColor;
   background-color: $backgroundColor;
+}
+
+@mixin shadow
+{
+  box-shadow: 0px 4px 4px 0px rgba($noir, 0.25);
+}
+
+@mixin textColorAlign($color,$align)
+{
+  color: $color;
+  text-align: $align;
+}
+
+@mixin colorUnderline($color)
+{
+  color: $color;
+  text-decoration: underline;
+}
+
+//CURSEUR HOVER
+@mixin hoverPointer
+{
+  &:hover
+  {
+    cursor: pointer;
+  }
 }

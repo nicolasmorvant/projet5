@@ -1,4 +1,5 @@
-@import '../Tool/Tool';
+@import "../Tool/Mixins";
+@import "../Tool/Variables";
 
 .logement
 {
@@ -30,11 +31,6 @@
         margin-top: 10px;
         max-width: 350px;
 
-        @media(max-width: 1024px)
-        {
-            margin-top: 10px;
-        }
-
         @media(max-width: 768px)
         {
             @include fontSizeFontWeight(14px, 500);
@@ -59,10 +55,9 @@
 
     &__name
     {
+        @include textColorAlign($rouge,right);
         @include fontSizeFontWeight(18px, 500);
         margin-right: 10px;
-        color: $rouge;
-        text-align: right;
         max-width: 93px;
 
         @media(max-width: 768px)
@@ -118,7 +113,7 @@
     &__descEquip
     {
         @include flexCustom(row,space-between,flex-start,nowrap);
-        margin-top: 30px;
+        margin-top: 20px;
 
         @media(max-width: 1092px)
         {
