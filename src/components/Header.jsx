@@ -14,11 +14,16 @@ const Header = () => {
     const pageActive = objetPage.pathname
 
     useEffect(() => {
-        if (pageActive === '/') {
+        if(pageActive === '/') 
+        {
             setEstActive('Accueil')
-        } else if (pageActive === '/about') {
+        } 
+        else if(pageActive === '/about') 
+        {
             setEstActive('A Propos')
-        } else {
+        }
+        else
+        {
             setEstActive('')
         }
     }, [pageActive])
