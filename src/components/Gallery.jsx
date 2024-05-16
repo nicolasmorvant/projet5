@@ -1,8 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../styles/Gallery/Gallery.css'
 import Card from '../components/Card'
 import logements from '../logements.json'
-import { Link } from 'react-router-dom'
 
 const Gallery = () => {
     return (

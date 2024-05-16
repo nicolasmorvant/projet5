@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import '../styles/Header/Header.css'
 import logo from '../assets/logo.svg'
-import { Link, useLocation } from 'react-router-dom'
 
 const Header = () => {
     //DÉFINITION D'UN STATE POUR LA PAGE ACTIVE
