@@ -28,12 +28,14 @@ body
 {
   max-width: 1440px;
   margin: 0 auto;
+  min-height: 100vh;
 }
 
 .main
 {
   @include flexCustom(column,flex-start,center,nowrap);
   margin: 50px 100px;
+  flex: 1;
 
   @media(max-width: 768px)
   {

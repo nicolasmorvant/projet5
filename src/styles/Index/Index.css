@@ -23,6 +23,7 @@ body {
 #root {
   max-width: 1440px;
   margin: 0 auto;
+  min-height: 100vh;
 }
 
 .main {
@@ -32,6 +33,7 @@ body {
   align-items: center;
   flex-wrap: nowrap;
   margin: 50px 100px;
+  flex: 1;
 }
 @media (max-width: 768px) {
   .main {
