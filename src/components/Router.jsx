@@ -9,10 +9,11 @@ import Error404 from '../pages/Error404'
 
 const Router = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/projet5">
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/index.html" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/logement/:logementId" element={<Logement />} />
                 <Route path="*" element={<Error404 />} />
